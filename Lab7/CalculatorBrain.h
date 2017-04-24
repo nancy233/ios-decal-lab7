@@ -10,7 +10,8 @@
 
 @interface CalculatorBrain : NSObject
 typedef enum actionType : long {
-    multiply = 0,
+    divide = 0,
+    multiply,
     subtract,
     add,
     equal

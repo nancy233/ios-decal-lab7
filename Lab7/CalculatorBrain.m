@@ -76,8 +76,12 @@
 - (void)commitAction {
     double operand1 = [_savedOperand doubleValue];
     double operand2 = [_calculationString doubleValue];
-    double total = 0;
+    double total = 0.0;
     switch (_currentAction) {
+        case divide: {
+            total = operand1 / operand2;
+            break;
+        }
         case multiply: {
             total = operand1 * operand2;
             break;
